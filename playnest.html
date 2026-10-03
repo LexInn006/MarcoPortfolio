@@ -53,7 +53,8 @@
   .back-link svg { width: 16px; height: 16px; }
 
   .hero { padding: 64px 0 56px; }
-  .hero-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+  .hero-top { display: grid; grid-template-columns: 1fr 280px; gap: 40px; align-items: start; }
+  @media (max-width: 760px) { .hero-top { grid-template-columns: 1fr; } }
   .hero-copy { max-width: 640px; }
   .eyebrow {
     display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 999px;
